@@ -1,0 +1,9 @@
+{
+  "name": "com.ifabula.pluginfingerprint",
+  "version": "1.0.0",
+  "description": "PluginFingerprint for OutSystems",
+  "cordova": {
+    "id": "com.ifabula.pluginfingerprint",
+    "platforms": ["android"]
+  }
+}
