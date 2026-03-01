@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>PluginFingerprint</name>
     <js-module name="PluginFingerprint" src="www/PluginFingerprint.js">
-        <clobbers target="Fingerprint" />
+        <clobbers target="cordova.plugins.PluginFingerprint" />
     </js-module>
 
     <platform name="android">
