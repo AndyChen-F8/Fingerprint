@@ -12,4 +12,4 @@ var PluginFingerprint = {
 
 };
 
-module.exports = PluginFingerprint;
+window.Fingerprint = PluginFingerprint;
