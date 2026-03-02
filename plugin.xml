@@ -4,17 +4,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>PluginFingerprint</name>
     <js-module name="PluginFingerprint" src="www/PluginFingerprint.js">
-        <clobbers target="cordova.plugins.PluginFingerprint" />
+        <runs />
     </js-module>
 
     <platform name="android">
+
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="PluginFingerprint">
                 <param name="android-package" value="com.ifabula.pluginfingerprint.PluginFingerprint" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
         <source-file src="src/android/PluginFingerprint.java" target-dir="src/com/ifabula/pluginfingerprint" />
+
+        <framework src="androidx.biometric:biometric:1.1.0" />
+
     </platform>
 
 </plugin>
